@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<MediaCodecs>
+    <Decoders>
+        <MediaCodec name="OMX.Exynos.avc.dec" type="video/avc" update="true">
+            <!-- measured [425-427] lower-upper [108-1148] median * 1.5 [640] -->
+            <Limit name="measured-frame-rate-320x240" range="237-522" />
+            <!-- measured [592-597] lower-upper [150-1601] median * 1.5 [892] -->
+            <Limit name="measured-frame-rate-720x480" range="331-728" />
+            <!-- measured [553-554] lower-upper [140-1490] median * 1.5 [831] -->
+            <Limit name="measured-frame-rate-1280x720" range="308-677" />
+            <!-- measured [438-438] lower-upper [111-1179] median * 1.5 [657] -->
+            <Limit name="measured-frame-rate-1920x1080" range="244-536" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.h263.dec" type="video/3gpp" update="true">
+            <!-- measured [650-684] lower-upper [169-1795] median * 1.5 [1001] -->
+            <Limit name="measured-frame-rate-176x144" range="371-816" />
+            <!-- measured [507-511] lower-upper [129-1370] median * 1.5 [764] -->
+            <Limit name="measured-frame-rate-352x288" range="283-623" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.hevc.dec" type="video/hevc" update="true">
+            <!-- measured [452-458] lower-upper [115-1226] median * 1.5 [683] -->
+            <Limit name="measured-frame-rate-352x288" range="253-557" />
+            <!-- measured [544-548] lower-upper [138-1470] median * 1.5 [820] -->
+            <Limit name="measured-frame-rate-640x360" range="304-668" />
+            <!-- measured [633-646] lower-upper [162-1721] median * 1.5 [960] -->
+            <Limit name="measured-frame-rate-720x480" range="356-782" />
+            <!-- measured [590-595] lower-upper [150-1596] median * 1.5 [890] -->
+            <Limit name="measured-frame-rate-1280x720" range="330-725" />
+            <!-- measured [566-568] lower-upper [143-1525] median * 1.5 [850] -->
+            <Limit name="measured-frame-rate-1920x1080" range="315-693" />
+            <!-- measured [167-167] lower-upper [42-451] median * 1.5 [251] -->
+            <Limit name="measured-frame-rate-3840x2160" range="93-205" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.mpeg4.dec" type="video/mp4v-es" update="true">
+            <!-- measured [505-508] lower-upper [128-1363] median * 1.5 [760] -->
+            <Limit name="measured-frame-rate-176x144" range="282-620" />
+            <!-- measured [332-332] lower-upper [84-894] median * 1.5 [498] -->
+            <Limit name="measured-frame-rate-480x360" range="185-406" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.vp8.dec" type="video/x-vnd.on2.vp8" update="true">
+            <!-- measured [548-561] lower-upper [140-1492] median * 1.5 [832] -->
+            <Limit name="measured-frame-rate-320x180" range="308-678" />
+            <!-- measured [618-634] lower-upper [158-1684] median * 1.5 [939] -->
+            <Limit name="measured-frame-rate-640x360" range="348-766" />
+            <!-- measured [670-692] lower-upper [172-1832] median * 1.5 [1022] -->
+            <Limit name="measured-frame-rate-1280x720" range="379-833" />
+            <!-- measured [393-394] lower-upper [100-1060] median * 1.5 [591] -->
+            <Limit name="measured-frame-rate-1920x1080" range="219-482" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.vp9.dec" type="video/x-vnd.on2.vp9" update="true">
+            <!-- measured [402-406] lower-upper [102-1088] median * 1.5 [607] -->
+            <Limit name="measured-frame-rate-320x180" range="225-495" />
+            <!-- measured [449-454] lower-upper [114-1216] median * 1.5 [678] -->
+            <Limit name="measured-frame-rate-640x360" range="251-553" />
+            <!-- measured [546-551] lower-upper [139-1476] median * 1.5 [823] -->
+            <Limit name="measured-frame-rate-1280x720" range="305-671" />
+            <!-- measured [386-387] lower-upper [98-1041] median * 1.5 [580] -->
+            <Limit name="measured-frame-rate-1920x1080" range="215-473" />
+            <!-- measured [112-112] lower-upper [28-303] median * 1.5 [169] -->
+            <Limit name="measured-frame-rate-3840x2160" range="63-138" />
+        </MediaCodec>
+    </Decoders>
+    <Encoders>
+        <MediaCodec name="OMX.Exynos.AVC.Encoder" type="video/avc" update="true">
+            <!-- measured [423-443] lower-upper [109-1166] median * 1.5 [650] -->
+            <Limit name="measured-frame-rate-320x240" range="241-530" />
+            <!-- measured [405-408] lower-upper [103-1095] median * 1.5 [610] -->
+            <Limit name="measured-frame-rate-720x480" range="226-498" />
+            <!-- measured [297-297] lower-upper [75-799] median * 1.5 [445] -->
+            <Limit name="measured-frame-rate-1280x720" range="165-363" />
+            <!-- measured [153-156] lower-upper [39-416] median * 1.5 [232] -->
+            <Limit name="measured-frame-rate-1920x1080" range="86-189" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.H263.Encoder" type="video/3gpp" update="true">
+            <!-- measured [462-464] lower-upper [117-1246] median * 1.5 [695] -->
+            <Limit name="measured-frame-rate-176x144" range="258-567" />
+            <!-- measured [346-349] lower-upper [88-936] median * 1.5 [521] -->
+            <Limit name="measured-frame-rate-352x288" range="193-425" />
+            <!-- measured [123-123] lower-upper [31-332] median * 1.5 [185] -->
+            <Limit name="measured-frame-rate-704x576" range="69-151" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.HEVC.Encoder" type="video/hevc" update="true">
+            <!-- measured [368-425] lower-upper [100-1068] median * 1.5 [595] -->
+            <Limit name="measured-frame-rate-320x240" range="221-485" />
+            <!-- measured [349-350] lower-upper [88-942] median * 1.5 [525] -->
+            <Limit name="measured-frame-rate-720x480" range="195-428" />
+            <!-- measured [174-178] lower-upper [45-475] median * 1.5 [265] -->
+            <Limit name="measured-frame-rate-1280x720" range="98-216" />
+            <!-- measured [87-88] lower-upper [22-237] median * 1.5 [131] -->
+            <Limit name="measured-frame-rate-1920x1080" range="49-108" />
+            <!-- measured [46-46] lower-upper [12-126] median * 1.5 [70] -->
+            <Limit name="measured-frame-rate-3840x2160" range="26-57" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.MPEG4.Encoder" type="video/mp4v-es" update="true">
+            <!-- measured [460-460] lower-upper [116-1238] median * 1.5 [690] -->
+            <Limit name="measured-frame-rate-176x144" range="256-563" />
+            <!-- measured [347-349] lower-upper [88-937] median * 1.5 [522] -->
+            <Limit name="measured-frame-rate-352x288" range="194-426" />
+            <!-- measured [156-156] lower-upper [39-420] median * 1.5 [234] -->
+            <Limit name="measured-frame-rate-640x480" range="87-191" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.VP8.Encoder" type="video/x-vnd.on2.vp8" update="true">
+            <!-- measured [350-358] lower-upper [90-954] median * 1.5 [532] -->
+            <Limit name="measured-frame-rate-320x180" range="197-434" />
+            <!-- measured [329-330] lower-upper [83-888] median * 1.5 [495] -->
+            <Limit name="measured-frame-rate-640x360" range="184-404" />
+            <!-- measured [167-167] lower-upper [42-450] median * 1.5 [250] -->
+            <Limit name="measured-frame-rate-1280x720" range="93-204" />
+            <!-- measured [88-88] lower-upper [22-238] median * 1.5 [132] -->
+            <Limit name="measured-frame-rate-1920x1080" range="49-108" />
+        </MediaCodec>
+        <MediaCodec name="OMX.Exynos.VP9.Encoder" type="video/x-vnd.on2.vp9" update="true">
+            <!-- measured [404-405] lower-upper [102-1089] median * 1.5 [607] -->
+            <Limit name="measured-frame-rate-320x180" range="225-495" />
+            <!-- measured [376-376] lower-upper [95-1013] median * 1.5 [564] -->
+            <Limit name="measured-frame-rate-640x360" range="209-460" />
+            <!-- measured [202-203] lower-upper [51-546] median * 1.5 [304] -->
+            <Limit name="measured-frame-rate-1280x720" range="113-248" />
+            <!-- measured [113-119] lower-upper [29-313] median * 1.5 [174] -->
+            <Limit name="measured-frame-rate-1920x1080" range="65-142" />
+            <!-- measured [57-59] lower-upper [15-157] median * 1.5 [87] -->
+            <Limit name="measured-frame-rate-3840x2160" range="32-71" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true" variant="!slow-cpu">
+            <!-- measured [208-241] lower-upper [57-605] median * 1.5 [337] -->
+            <Limit name="measured-frame-rate-320x180" range="125-275" />
+            <!-- measured [83-96] lower-upper [23-242] median * 1.5 [134] -->
+            <Limit name="measured-frame-rate-640x360" range="50-110" />
+            <!-- measured [21-25] lower-upper [6-63] median * 1.5 [34] -->
+            <Limit name="measured-frame-rate-1280x720" range="13-28" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true">
+            <!-- measured [196-255] lower-upper [57-607] median * 1.5 [338] -->
+            <Limit name="measured-frame-rate-320x240" range="125-276" />
+            <!-- measured [56-61] lower-upper [15-159] median * 1.5 [88] -->
+            <Limit name="measured-frame-rate-720x480" range="33-72" />
+            <!-- measured [22-23] lower-upper [6-63] median * 1.5 [35] -->
+            <Limit name="measured-frame-rate-1280x720" range="13-29" />
+        </MediaCodec>
+    </Encoders>
+</MediaCodecs>

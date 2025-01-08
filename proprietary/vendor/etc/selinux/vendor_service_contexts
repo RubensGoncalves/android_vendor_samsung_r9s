@@ -1,0 +1,66 @@
+#line 1 "vendor/samsung/system/sepolicy/samsung/service_contexts"
+# Due to AIDL HAL introduction, vendors can publish services
+# with servicemanager. vendor_service_contexts is labeled as
+# vendor_service_contexts_file, not nonplat_service_contexts_file.
+# And pack it to vendor partition.
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3993
+vendor.samsung.hardware.light.ILights/default            u:object_r:hal_light_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3902
+vendor.samsung.hardware.base.ISehBase/default            u:object_r:hal_base_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4117
+vendor.samsung.hardware.hyper.ISehHyPer/default      u:object_r:hal_hyper_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4208
+vendor.samsung.hardware.uwb@1.0::ISehUwb/default      u:object_r:hal_uwb_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6118
+vendor.samsung.hardware.media.converter.ISehColorConverterStore/default      u:object_r:hal_converter_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6133
+vendor.samsung.hardware.media.mpp.ISehMppStore/default		u:object_r:hal_mpp_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4260
+vendor.samsung.frameworks.codecsolution.ISehCodecSolution/default      u:object_r:aidl_codecsolution_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6241
+vendor.samsung.hardware.gnss.ISehGnss/default                u:object_r:hal_gnss_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6234
+vendor.samsung.hardware.kpm.ISehKpm/default      u:object_r:hal_kpm_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6460
+vendor.samsung.hardware.security.hdcp.wifidisplay.ISehHdcp/default                u:object_r:hal_hdcp_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-7109
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-9705
+vendor.samsung.hardware.ifaa@1.0::ISehIfaa/default									u:object_r:hal_ifaa_service:s0
+vendor.samsung.hardware.ifaa.ISehIfaa/default									    u:object_r:hal_ifaa_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-7627
+vendor.samsung.hardware.snap.ISehSnap/default               u:object_r:hal_snap_service:s0
+vendor.samsung.hardware.snap.ISehSnap/secsnap               u:object_r:hal_securesnap_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-7938
+vendor.samsung.hardware.security.wsm@1.0::ISehWsm/default                      u:object_r:hal_wsm_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-8912
+vendor.samsung.hardware.security.fkeymaster.ISehFkeymaster/default                u:object_r:hal_fkey_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-9544
+vendor.samsung.hardware.security.widevine.keyprov.ISehWidevineKeyProv/default			                  u:object_r:hal_wvkprov_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-8144
+vendor.samsung.hardware.security.ssu.ISehSSUTEECL/default						u:object_r:hal_ssu_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-9587
+vendor.samsung.hardware.security.wsm.service.ISehWsm/default                      u:object_r:hal_wsm_service:s0
+#line 1 "device/samsung/sepolicy/common/service_contexts"
+# SEC_REMOVE : This is not AIDL hal service 
+# sims       u:object_r:sims_service:s0
+#line 1 "system/sepolicy/reqd_mask/service_contexts"
+# empty service_contexts file - this file is used to generate an empty
+# non-platform service_context for devices without any service_contexts
+# customizations.

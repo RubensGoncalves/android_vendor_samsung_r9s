@@ -1,0 +1,4 @@
+service gpu_boost /vendor/bin/hw/vendor.samsung_slsi.hardware.gpu_boost@1.0-service
+    class hal
+    user system
+    group system

@@ -1,0 +1,74 @@
+# MCPSD
+service mcps-daemon /vendor/bin/mcpsd
+    class main
+    user system
+    group system radio
+    disabled
+    oneshot
+
+service mcpsreset /vendor/bin/mcpsr
+    class main
+    user system
+    group system radio
+    disabled
+    oneshot
+
+on post-fs-data
+    #ARGOS
+    #exynos2100
+    chown system system /sys/module/cpif/parameters/big_clat_rps
+    chown system system /sys/module/cpif/parameters/big_rmnet_clat_rps
+    chown system system /sys/module/cpif/parameters/big_rmnet_rps
+    chown system system /sys/module/cpif/parameters/lit_clat_rps
+    chown system system /sys/module/cpif/parameters/lit_rmnet_clat_rps
+    chown system system /sys/module/cpif/parameters/lit_rmnet_rps
+    chown system system /sys/module/cpif/parameters/mif_rps_thresh
+    #exynos9830/9820
+    chown system system /sys/module/modem_argos_notifier/parameters/big_clat_rps
+    chown system system /sys/module/modem_argos_notifier/parameters/big_rmnet_clat_rps
+    chown system system /sys/module/modem_argos_notifier/parameters/big_rmnet_rps
+    chown system system /sys/module/modem_argos_notifier/parameters/lit_clat_rps
+    chown system system /sys/module/modem_argos_notifier/parameters/lit_rmnet_clat_rps
+    chown system system /sys/module/modem_argos_notifier/parameters/lit_rmnet_rps
+    chown system system /sys/module/modem_argos_notifier/parameters/mif_rps_thresh
+
+    #mcps
+    #exynos9830/9820
+    chown system system /sys/module/mcps/parameters/mcps_agro_flush_time
+    chown system system /sys/module/mcps/parameters/mcps_gro_flush_time
+
+    #exynos2100
+    chown system system /sys/module/mcps/parameters/mcps_gro_light_flush_limit
+    chown system system /sys/module/mcps/parameters/mcps_gro_phase_intervals
+    chown system system /sys/module/mcps/parameters/mcps_gro_phase_threshold
+
+    chown system system /sys/module/mcps/parameters/mcps_arps_config
+    chown system system /sys/module/mcps/parameters/mcps_arps_cpu
+    chown system system /sys/module/mcps/parameters/mcps_dynamic_cpu
+    chown system system /sys/module/mcps/parameters/mcps_enable
+    chown system system /sys/module/mcps/parameters/mcps_flush
+    chown system system /sys/module/mcps/parameters/mcps_gro_pantry_max_capability
+    chown system system /sys/module/mcps/parameters/mcps_gro_policy0
+    chown system system /sys/module/mcps/parameters/mcps_gro_policy1
+    chown system system /sys/module/mcps/parameters/mcps_heavy_flows
+    chown system system /sys/module/mcps/parameters/mcps_in6_addr
+    chown system system /sys/module/mcps/parameters/mcps_in_addr
+    chown system system /sys/module/mcps/parameters/mcps_l2b_pps
+    chown system system /sys/module/mcps/parameters/mcps_light_flows
+    chown system system /sys/module/mcps/parameters/mcps_mode
+    chown system system /sys/module/mcps/parameters/mcps_move
+    chown system system /sys/module/mcps/parameters/mcps_newflow_cpu
+    chown system system /sys/module/mcps/parameters/mcps_pantry_max_capability
+    chown system system /sys/module/mcps/parameters/mcps_rfs_buckets
+    chown system system /sys/module/mcps/parameters/mcps_rps_config
+    chown system system /sys/module/mcps/parameters/mcps_set_cluster_for_hotplug
+    chown system system /sys/module/mcps/parameters/mcps_set_cluster_for_newflow
+    chown system system /sys/module/mcps/parameters/mcps_stat_distributed
+    chown system system /sys/module/mcps/parameters/mcps_stat_dropped
+    chown system system /sys/module/mcps/parameters/mcps_stat_enqueued
+    chown system system /sys/module/mcps/parameters/mcps_stat_ignored
+    chown system system /sys/module/mcps/parameters/mcps_stat_processed
+    chown system system /sys/module/mcps/parameters/mcps_stat_sauron_flow
+    chown system system /sys/module/mcps/parameters/mcps_stat_sauron_target_flow
+    chown system system /sys/module/mcps/version
+    chown system system /proc/mcps/mcps_dump

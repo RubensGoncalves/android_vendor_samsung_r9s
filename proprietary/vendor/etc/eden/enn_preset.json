@@ -1,0 +1,279 @@
+{
+    "external_presets": [
+        {
+            "PresetId": 1,  // should be value from 1 to INT32_MAX
+            "name" : "preset1",
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                1196000,       // DSP frequency
+                3172000,       // MIF frequency
+                800000,        // INT frequency
+                -1,            // CPU (little) frequency
+                2808000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ]
+            ]
+        },
+        {
+            "PresetId": 31000000,  // should be value from 1 to INT32_MAX
+            "name" : "SRIB_AcenetVideo_CAFFE_V003_scale_ncp.bin", // #31
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 31100000,  // should be value from 1 to INT32_MAX
+            "name" : "acenet_video_v003_ncp.bin", // #31
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 32000000,  // should be value from 1 to INT32_MAX
+            "name" : "SRIB_MattingVideo_v003_test1_ncp.bin", // #32
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 1000000,  // should be value from 1 to INT32_MAX
+            "name" : "aic_classifier_cnn_ncp.bin", // #1
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 2000000,  // should be value from 1 to INT32_MAX
+            "name" : "aic_detector_cnn_ncp.bin", // #2
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 5000000,  // should be value from 1 to INT32_MAX
+            "name" : "aic_g_o_detector_cnn_ncp.bin", // #5
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 32000000,  // should be value from 1 to INT32_MAX
+            "name" : "pp_lsi_freeze_2452647113_tflite_ncp.bin", // #14
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 32000000,  // should be value from 1 to INT32_MAX
+            "name" : "pp_lsi_freeze_4252647113_tflite_ncp.bin", // #14
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 32000000,  // should be value from 1 to INT32_MAX
+            "name" : "lsi8_w_753846_tflite_ncp.bin", // #14 New
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 32000000,  // should be value from 1 to INT32_MAX
+            "name" : "lsi8_h_753846_tflite_ncp.bin", // #14 New
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                10             // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        }
+    ]
+}
