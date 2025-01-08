@@ -6,14 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/r9s
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0_strongbox-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0_strongbox-service \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/gps.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gps.sh \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/lhd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/lhd \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.1-service \
-    vendor/samsung/r9s/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
     vendor/samsung/r9s/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/r9s/proprietary/vendor/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
     vendor/samsung/r9s/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
@@ -34,9 +26,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/samsung/r9s/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/r9s/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
-    vendor/samsung/r9s/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
+    vendor/samsung/r9s/proprietary/vendor/firmware/APVD_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APVD_AUDIO_SLSI.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/NPU.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.1.6_01_26_QVGA.nnc \
@@ -46,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/firmware/abox_tplg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/avsyncmix.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/avsyncmix.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/bcm4375B1_murata.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4375B1_murata.hcd \
+    vendor/samsung/r9s/proprietary/vendor/firmware/bcm4375B1_semco.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4375B1_semco.hcd \
     vendor/samsung/r9s/proprietary/vendor/firmware/bcm4375B1_semco_sem.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4375B1_semco_sem.hcd \
     vendor/samsung/r9s/proprietary/vendor/firmware/bcmdhd_clm.blob:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_clm.blob \
     vendor/samsung/r9s/proprietary/vendor/firmware/bcmdhd_mfg.bin_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mfg.bin_b1 \
@@ -88,7 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/firmware/nvram.txt_CS01_semco_b1:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_CS01_semco_b1 \
     vendor/samsung/r9s/proprietary/vendor/firmware/rxse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rxse.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/s3908_r9.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s3908_r9.bin \
-    vendor/samsung/r9s/proprietary/vendor/firmware/s3908_r9_slsi.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s3908_r9_slsi.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/sb_ll.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_ll.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/sb_music.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_music.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/sb_others.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_others.bin \
@@ -111,6 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/lib/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_AlbumArt_ver105.so \
     vendor/samsung/r9s/proprietary/vendor/lib/lib_SoundAlive_SRC384_ver320.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_SRC384_ver320.so \
     vendor/samsung/r9s/proprietary/vendor/lib/lib_SoundAlive_play_plus_ver500.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_play_plus_ver500.so \
+    vendor/samsung/r9s/proprietary/vendor/lib/lib_SoundBooster_ver1070.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundBooster_ver1070.so \
     vendor/samsung/r9s/proprietary/vendor/lib/lib_soundaliveresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_soundaliveresampler.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libaboxpcmdump.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaboxpcmdump.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libalsautils_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils_sec.so \
@@ -125,11 +118,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfloatingfeature.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_in_system_lib.so \
     vendor/samsung/r9s/proprietary/vendor/lib/liblastaboxmsg.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblastaboxmsg.so \
+    vendor/samsung/r9s/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprofileparamstorage.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqfp_sensortest.so \
     vendor/samsung/r9s/proprietary/vendor/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudiocoreutils.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
+	  vendor/samsung/r9s/proprietary/vendor/lib/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspatializerparamstorage.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeakercalibration.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so \
     vendor/samsung/r9s/proprietary/vendor/lib/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtriplecam_image_optical_zoom.so \
@@ -152,6 +147,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/lib64/lib_SoundAlive_3DPosition_ver202.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_3DPosition_ver202.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_AlbumArt_ver105.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/lib_SoundAlive_play_plus_ver500.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_play_plus_ver500.so \
+	  vendor/samsung/r9s/proprietary/vendor/lib64/lib_SoundBooster_ver1070.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundBooster_ver1070.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libaudioparamupdate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparamupdate.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
@@ -166,6 +162,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/lib64/libsec2lsi_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec2lsi_conversion.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiocoreutils.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudioinfo.so \
+	  vendor/samsung/r9s/proprietary/vendor/lib64/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspatializerparamstorage.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeakercalibration.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/r9s/proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_image_optical_zoom.so \
@@ -218,4 +215,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-4d53546d7374 \
     vendor/samsung/r9s/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476 \
     vendor/samsung/r9s/proprietary/vendor/tee/driver/00000000-0000-0000-0000-564c544b4456:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-564c544b4456 \
-    vendor/samsung/r9s/proprietary/vendor/tee/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/ffffffff-0000-0000-0000-000000000030
+    vendor/samsung/r9s/proprietary/vendor/tee/driver/18d9f073-18a5-4ade-9def-875e07f7f293_:$(TARGET_COPY_OUT_VENDOR)/tee/driver/18d9f073-18a5-4ade-9def-875e07f7f293_ \
+    vendor/samsung/r9s/proprietary/vendor/tee/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/ffffffff-0000-0000-0000-000000000030 \
+    vendor/samsung/r9s/proprietary/vendor/tee/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/ffffffff-0000-0000-0000-000000000030 \
+    vendor/samsung/r9s/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
